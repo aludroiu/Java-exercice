@@ -8,5 +8,7 @@ public class GreaterLessThan {
 
         System.out.println(creditsEarned>creditsToGraduate);
 
+        double creditsAfterSeminar = creditsEarned + creditsOfSeminar;
+        System.out.println(creditsToGraduate<creditsAfterSeminar);
     }
 }
