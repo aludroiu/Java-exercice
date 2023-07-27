@@ -6,7 +6,6 @@ class ToDos {
     public static void main(String[] args) {
 
         // Sherlock
-        //Modify sherlocksToDos so that the value at "play violin" becomes "listen to Dr. Watson for amusement".
         ArrayList<String> sherlocksToDos = new ArrayList<String>();
 
         sherlocksToDos.add("visit the crime scene");
@@ -14,9 +13,7 @@ class ToDos {
         sherlocksToDos.add("interview suspects");
         sherlocksToDos.add("solve the case");
         sherlocksToDos.add("apprehend the criminal");
-        sherlocksToDos.set(1, "listen to Dr. Watson for amusement");
 
-        //Modify poirotsToDos so that the value at "trim mustache" becomes "listen to Captain Hastings for amusement".
         // Poirot
         ArrayList<String> poirotsToDos = new ArrayList<String>();
 
@@ -26,13 +23,12 @@ class ToDos {
         poirotsToDos.add("trim mustache");
         poirotsToDos.add("call all suspects together");
         poirotsToDos.add("reveal the truth of the crime");
-        poirotsToDos.set(3, "listen to Captain Hastings for amusement");
 
-        // Set each to-do below:
-        System.out.println("Sherlock's to-do list:");
+        // Remove each to-do below:
+        sherlocksToDos.remove("visit the crime scene");
+        poirotsToDos.remove("visit the crime scene");
+        sherlocksToDos.remove("play violin");
         System.out.println(sherlocksToDos.toString() + "\n");
-        System.out.println("Poirot's to-do list:");
         System.out.println(poirotsToDos.toString());
     }
-
 }
