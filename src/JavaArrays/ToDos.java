@@ -6,6 +6,7 @@ class ToDos {
     public static void main(String[] args) {
 
         // Sherlock
+        //Modify sherlocksToDos so that the value at "play violin" becomes "listen to Dr. Watson for amusement".
         ArrayList<String> sherlocksToDos = new ArrayList<String>();
 
         sherlocksToDos.add("visit the crime scene");
@@ -13,7 +14,9 @@ class ToDos {
         sherlocksToDos.add("interview suspects");
         sherlocksToDos.add("solve the case");
         sherlocksToDos.add("apprehend the criminal");
+        sherlocksToDos.set(1, "listen to Dr. Watson for amusement");
 
+        //Modify poirotsToDos so that the value at "trim mustache" becomes "listen to Captain Hastings for amusement".
         // Poirot
         ArrayList<String> poirotsToDos = new ArrayList<String>();
 
@@ -23,22 +26,13 @@ class ToDos {
         poirotsToDos.add("trim mustache");
         poirotsToDos.add("call all suspects together");
         poirotsToDos.add("reveal the truth of the crime");
+        poirotsToDos.set(3, "listen to Captain Hastings for amusement");
 
-        // Print the size of each ArrayList below:
-        System.out.println(sherlocksToDos.size());
-        System.out.println(poirotsToDos.size());
-
-        // Print the name of the detective with the larger to-do list:
-        System.out.println("Poirot");
-
-        System.out.println("Sherlock's third to-do:");
-        // Print Sherlock's third to-do:
-        System.out.println(sherlocksToDos.get(2));
-
-        System.out.println("\nPoirot's second to-do:");
-        // Print Poirot's second to-do:
-        System.out.println(poirotsToDos.get(1));
-
+        // Set each to-do below:
+        System.out.println("Sherlock's to-do list:");
+        System.out.println(sherlocksToDos.toString() + "\n");
+        System.out.println("Poirot's to-do list:");
+        System.out.println(poirotsToDos.toString());
     }
 
 }
